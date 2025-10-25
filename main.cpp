@@ -7,6 +7,7 @@ int main()
 {
   size_t a = 0, b = 0, c = 0;
   size_t count = 0;
+  std::cin >> c >> b;
   while (std::cin >> a) {
     count += isPth(a,b,c);
     c = b;
@@ -16,7 +17,7 @@ int main()
     std::cout << count << '\n';
     return 0;
   }else if (std::cin.fail()) {
-    std::cout << "Sudar, vse ploho\n";
+    std::cout << "Man, u are mistake\n";
     return 1;
   }
 }
